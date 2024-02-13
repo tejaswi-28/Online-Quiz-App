@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Montserrat:wght@200&family=Noto+Serif&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    scroll-behavior: smooth;
+}
+.main-content{
+    padding-top: 6rem;
+    height: 100vh;
+    background: #fff;
+    background: url('/public/images/bg2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* color: aliceblue; */
+    color: rgb(6, 6, 6);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: linear-gradient(to right,white, pink, indigo, black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 10px rgb(0, 238, 255));
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: #0ef;
+    text-shadow: 0 0 15px #0ef;
+}
+.quiz-list {
+    margin-top: 5%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0ef,inset 0 0 10px #c40094;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+#quiz-list-container{
+    padding-top: 30px;
+    margin: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 8px 10px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 5px#000;
+}
+li a{
+    text-decoration: none;
+    color: rgb(25, 21, 76);
+    font-size: 18px;
+}
+li:hover {
+    background-color: transparent;
+    box-shadow: 0 0 5px #0ef, inset 0 0 5px #c40094;
+    text-shadow: 0 0 5px #0ef;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* @media screen {
+    @media (min-width: 325px) ,(max-width: 650px) { */
+/* @media screen {
+    @media (min-width:325px) , (max-width: 650px){
+        .quiz-list{
+            padding: 0;
+        }
+    }
+} */

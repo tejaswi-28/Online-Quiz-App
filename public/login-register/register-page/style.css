@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Montserrat:wght@200&family=Noto+Serif&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    scroll-behavior: smooth;
+}
+.main-content{
+    height: 100vh;
+    background: #fff;
+    background: url('/public/images/bg2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* color: aliceblue; */
+    color: rgb(6, 6, 6);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: linear-gradient(to right,white, pink, indigo, black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 10px rgb(0, 238, 255));
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: #0ef;
+    text-shadow: 0 0 15px #0ef;
+}
+.main-content h1{
+    padding-top: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    /* text-shadow: 0 0 5px #000; */
+    text-shadow: 0 0 4px rgb(65, 65, 65);
+}
+.container{
+    margin-top: 5%;
+    position: relative;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #0ef;
+    border-radius: 18px;
+    margin: 20px 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px #0ef, inset 0 0 15px #c40094;
+}
+.container .info{
+    margin: 20px 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgb(244, 172, 172);
+}
+.space{
+    padding: 0px;
+}
+.input{
+    border-radius: 4px;
+    padding: 3px 5px;
+    width: 100%;
+}
+.input:hover{
+    color: aliceblue;
+    background: #3f3f3f;
+    border: 2px solid#0ef;
+}
+.btn{
+    width: 160px;
+    /* background: transparent; */
+    border: 2px solid #000000;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: 0 0 5px #c40094, inset 0 0 10px #0ef;
+    margin: 20px 100px;
+    padding: 10px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.btn:hover{
+    color: #fff;
+    text-shadow: 0 0 25px #0ef;
+    background: #000000;
+    box-shadow: 0 0 5px #0ef, inset 0 0 10px #c40094;
+}
+@media screen {
+    @media (min-width: 325px) ,(max-width: 650px) {
+        .main-content{
+            padding-top: 60px;
+        }
+        .main-content h1{
+            /* font-size: 30px; */
+            padding-bottom: 35px;
+        }
+        .container{
+            /* width: 70%; */
+            margin: auto;
+        }
+        .container .info{
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;        
+        }
+        .input{
+            padding: 3px;
+            margin: 0;
+            width: auto;
+        }
+        .btn{
+            width: 100px;
+            margin: auto;
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+}
